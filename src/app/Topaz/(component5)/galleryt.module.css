@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  margin: auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  place-content: center;
+  margin-bottom: 1rem;
+  animation-name: down;
+  animation-duration: 1s;
+}
+
+@keyframes down {
+  from {
+    transform: translateY(-100px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.flexitem {
+  width: 100%;
+  flex-basis: 380px;
+  margin: 5px;
+}
+
+.gimg {
+  width: 100%;
+  border-radius: 5px;
+  transition: 2s;
+}
+
+/* .gimg:hover{
+
+    transition: 2s;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    object-fit: contain;
+    animation-name: gal;
+    animation-duration: 1s;
+    
+} */
+
+/* @keyframes gal{
+ 
+    from{
+        transform: translateX(-200px);
+
+
+    }
+
+    to {
+        transform: translateX(0px);
+
+
+
+    }
+
+} */

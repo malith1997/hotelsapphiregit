@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  margin: auto;
+  background-color: rgba(53, 44, 130, 0.204);
+  max-width: 1200px;
+  padding: 2rem;
+  border-radius: 10px;
+  grid-gap: 2rem;
+}
+
+.item1 {
+  width: 100%;
+  margin: auto;
+  padding: 0rem 5rem 0rem 1rem;
+}
+
+.item2 {
+  width: 100%;
+  margin: auto;
+  padding: 0rem 5rem 0rem 1rem;
+  animation-name: wtext;
+  animation-duration: 1s;
+}
+
+.submain {
+  font-size: 30px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+.abtimg {
+  max-width: 70%;
+  height: 40%;
+  display: flex;
+  margin: auto;
+  border-radius: 5px 50px 5px 50px;
+  animation-name: wimg;
+  animation-duration: 1s;
+}
+
+.input1 {
+  width: 100%;
+  padding: 10px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn {
+  display: flex;
+  padding: 10px 30px 10px 30px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(53, 44, 130);
+  transition: 0.8s;
+}
+
+.btn:hover {
+  padding: 10px 40px 10px 40px;
+  transition: 0.8s;
+  color: aliceblue;
+  background-color: rgb(53, 44, 130);
+}
+
+@keyframes wimg {
+  from {
+    transform: translateX(-100px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes wtext {
+  from {
+    transform: translateX(200px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+  }
+
+  .item1 {
+    padding: 2rem;
+  }
+
+  .item2 {
+    padding: 2rem;
+  }
+}

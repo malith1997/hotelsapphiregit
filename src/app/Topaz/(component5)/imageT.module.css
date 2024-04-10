@@ -1,0 +1,46 @@
+.bg {
+  background-image: url("../../../../public/topaz.png");
+  height: 60vh;
+  object-fit: "cover";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 5rem;
+}
+
+.container {
+  max-width: 1200px;
+  display: grid;
+  margin: auto;
+  place-content: center;
+  padding: 2rem;
+  animation-name: down;
+  animation-duration: 1s;
+}
+
+@keyframes down {
+  from {
+    transform: translateY(-100px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.headt {
+  padding: 2rem;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(53, 44, 130);
+}
+
+.parat {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 200;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,99 @@
+.fcontainer {
+  background-color: rgb(255, 255, 255);
+}
+
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  grid-gap: 5rem;
+}
+
+.flexitem1 {
+  padding: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  place-content: center;
+}
+
+.flexitem {
+  padding: 20px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.scontainer {
+  display: flex;
+  margin: auto;
+  place-content: center;
+}
+.sociallogo {
+  width: 50px;
+  height: 50px;
+}
+
+.flogo {
+  display: flex;
+  width: 150px;
+  height: 80px;
+  margin: auto;
+}
+
+.flink {
+  margin-top: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(53, 44, 130);
+}
+
+.link:hover {
+  color: rgb(27, 27, 27);
+  font-weight: 500;
+}
+
+.fbottom {
+  display: flex;
+  margin: auto;
+  max-width: 100%;
+  text-align: center;
+  justify-content: center;
+  color: aliceblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(53, 44, 130);
+}
+
+@media screen and (max-width: 768px) {
+  .fcontainer {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+  }
+
+  .flexitem1 {
+    flex-basis: 1000px;
+    text-align: center;
+  }
+
+  .flexitem {
+    flex-basis: 1000px;
+    text-align: center;
+  }
+
+  .flink {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+}

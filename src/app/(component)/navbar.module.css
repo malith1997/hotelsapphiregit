@@ -1,0 +1,120 @@
+
+.logo {
+  width: 100px;
+  height: 50px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(53, 44, 130);
+  padding: 7px 25px 7px 25px;
+  border-radius: 5px;
+  transition: 1.8s;
+}
+
+.link:hover {
+  background-color: white;
+  color: rgb(53, 44, 130);
+  border: 1px solid rgb(53, 44, 130);
+  padding: 7px 20px 7px 20px;
+  transition: 1.8s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: auto;
+
+ 
+}
+
+.navbarBrand {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.navbarMenu ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarMenu li {
+  margin-right: 1rem;
+}
+
+.hamburgerMenu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: #5a5a5a;
+  transition: 0.3s ease;
+}
+
+.active .bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.active .bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .navbarMenu {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+  }
+
+  .link {
+    text-decoration: none;
+    color: rgb(53, 44, 130);
+    display: flex;
+    place-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 100;
+  }
+
+  .link:hover {
+    background-color: rgb(53, 44, 130);
+    color: rgb(255, 255, 255);
+    transition: 1.8s;
+    border: none;
+    display: flex;
+  }
+
+  .navbarMenu ul {
+    flex-direction: column;
+  }
+
+  .navbarMenu.active {
+    display: block;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+  }
+}

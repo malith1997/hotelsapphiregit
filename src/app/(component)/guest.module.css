@@ -1,0 +1,98 @@
+.bg {
+  background-image: url("../../../public/family.png");
+  height: 60vh;
+  object-fit: "cover";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 5rem;
+}
+
+.trance {
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  max-width: 700px;
+  padding: 4rem;
+  margin-top: 5rem;
+  place-content: center;
+  border-radius: 8px;
+  margin: auto;
+  animation-name: trancebox;
+  animation-duration: 1s;
+}
+
+@keyframes trancebox {
+  from {
+    transform: translateX(-200px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.phara {
+  margin-top: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.phara2 {
+  margin-top: 0px;
+  color: white;
+  font-size: 12px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subhead {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.submain {
+  font-size: 30px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1080px) {
+  .bg {
+    height: 40vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .trance {
+    padding: 2rem;
+  }
+
+  .bg {
+    height: 65vh;
+    width: 100%;
+  }
+
+  .submain {
+    text-align: center;
+  }
+
+  .phara {
+    text-align: center;
+  }
+
+  .phara2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .bg {
+    height: 50vh;
+  }
+}
