@@ -56,14 +56,14 @@ function Nav() {
             </li>
 
             <li>
-              <Link href="/about" className={styles.link} onClick={closeMenu}>
-                ABOUT
+              <Link href="/weddings" className={styles.link} onClick={closeMenu}>
+              WEDDING & FUNCTIONS
               </Link>
             </li>
 
             <li>
-              <Link href="/Book" className={styles.link} onClick={closeMenu}>
-                BOOK
+              <Link href="/about" className={styles.link} onClick={closeMenu}>
+                ABOUT
               </Link>
             </li>
 
@@ -85,3 +85,4 @@ function Nav() {
 }
 
 export default Nav;
+

@@ -15,7 +15,7 @@ function Blue() {
 
         <div className={Style.afitem2}>
           <h2 className={Style.submain}>Blue Sapphire</h2>
-          <h4 className={Style.subhead}>Blue Sapphire</h4>
+          <h4 className={Style.subhead}>Your Perfect Day, Our Blue Sapphire Way</h4>
 
           <p className={Style.phara}>
             Recently refurbished with modern facilities which include modern

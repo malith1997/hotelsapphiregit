@@ -1,5 +1,7 @@
 import React from "react";
 import style from "../../weddings/(component3)/image.module.css";
+import Image from "next/image";
+import per from "../../../../public/icons/person.png";
 
 function Imagehed() {
   return (
@@ -30,16 +32,70 @@ function Imagehed() {
         </p>
 
         <p className={style.parat}>For more information, please contact:</p>
-        <p className={style.parat}>Siva – Banquet Manager – 0722-432326</p>
-        <p className={style.parat}>
-          Vajira – Banquet Coordinator – 0718-717086
-        </p>
-        <p className={style.parat}>Ashoka – F & B Coordinator – 0779-767077</p>
-        <p className={style.parat}>Hotline – 0772-624624</p>
+        
 
-        <p className={style.parat}>
-          E-mail: bnqtmgr@hotelsapphirelk.com / bnqtcor@hotelsapphirelk.com
-        </p>
+        {/* <div className={style.containerthree}>
+
+          <div className={style.itemthree}>
+
+            <p className={style.contdename}>Vinnyfreeda Amalathasan</p>
+            <p className={style.contde}>Senior Sales & Marketing Manager – Leisure</p>
+            <p className={style.contde}> +94 761 647 238</p>
+            <p className={style.contde}> +94 112 363 306</p>
+            <p className={style.contde}> vinnyfreeda.a@hotelsapphirelk.com</p>
+            
+
+          </div>
+
+          <div className={style.itemthree}>
+            
+            <p className={style.contdename}>N.Sivaratnam</p>
+            <p className={style.contde}>Manager-Food and Beverage</p>
+            <p className={style.contde}> +94 0772 624 624</p>
+            <p className={style.contde}> +94 112 363 307</p>
+            <p className={style.contde}> sales@hotelsapphirelk.com</p>
+            <p className={style.contde}> No 371 Galle Road Colombo 06, Sri Lanka.</p>
+
+          </div>
+
+        </div> */}
+
+
+        <div className={style.containerone}>
+
+        <div className={style.itemone}>
+
+          <Image src={per} alt="icon" className={style.icon} />
+          <p className={style.contdename}>Vinnyfreeda Amalathasan</p>
+          <p className={style.contdename}> | </p>
+          <p className={style.contde}>Senior Sales & Marketing Manager – Leisure</p>
+          <p className={style.contdename}> | </p>
+          <p className={style.contde}> +94 761 647 238</p>
+         
+          
+
+          </div>
+
+
+
+          <div className={style.itemone}>
+
+          <Image src={per} alt="icon" className={style.icon} />
+          <p className={style.contdename}>N.Sivaratnam</p>
+          <p className={style.contdename}> | </p>
+          <p className={style.contde}>Manager-Food and Beverage</p>
+          <p className={style.contdename}> | </p>
+          <p className={style.contde}>+94 0772 624 624</p>
+          <p className={style.contdename}> | </p>
+          <p className={style.contde}>+94 112 363 307</p>
+          
+         
+
+          </div>
+
+        </div>
+
+
       </div>
     </div>
   );

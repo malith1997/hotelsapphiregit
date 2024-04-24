@@ -11,7 +11,7 @@ function Yellow() {
       <div className={Style.aboutcd}>
         <div className={Style.afitem1}>
           <h2 className={Style.submain}>Yellow Sapphire</h2>
-          <h4 className={Style.subhead}>Yellow Sapphire</h4>
+          <h4 className={Style.subhead}>Shine Bright on Your Big Day</h4>
 
           <p className={Style.phara}>
             Refurbished in the year 2016 with contemporary design to suit any

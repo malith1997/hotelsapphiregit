@@ -1,0 +1,108 @@
+.aboutcd {
+    display: flex;
+    grid-gap: 5rem;
+    margin: auto;
+    max-width: 1200px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+  }
+  
+  .afitem1 {
+    max-width: 500px;
+    margin: auto;
+  
+    animation-name: atext;
+    animation-duration: 1s;
+  }
+  
+  .afitem2 {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .subhead {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(53, 44, 130);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .submain {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  .abtimg {
+    max-width: 70%;
+    height: 40%;
+    display: flex;
+    margin: auto;
+    border-radius: 5px 50px 5px 50px;
+    animation-name: aimg;
+    animation-duration: 1s;
+  }
+  
+  @keyframes aimg {
+    from {
+      transform: translateX(100px);
+    }
+  
+    to {
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes atext {
+    from {
+      transform: translateX(-100px);
+    }
+  
+    to {
+      transform: translateX(0px);
+    }
+  }
+  
+  .phara {
+    font-size: 17px;
+    font-weight: 200;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    padding-bottom: 2rem;
+    text-align: justify;
+  }
+  
+  .btn {
+    display: flex;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(53, 44, 130);
+    transition: 0.8s;
+  }
+  
+  .btn:hover {
+    padding: 10px 40px 10px 40px;
+    transition: 0.8s;
+    color: aliceblue;
+    background-color: rgb(53, 44, 130);
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .afitem1 {
+      order: 0;
+      padding: 2rem;
+    }
+  
+    .afitem2 {
+      order: -1;
+      padding: 2rem;
+    }
+  
+    .abtimg {
+      border-radius: 5px 5px 5px 5px;
+    }
+  }
+  

@@ -15,6 +15,9 @@
   margin: auto;
   place-content: center;
   padding: 2rem;
+  padding-bottom: 0rem;
+  animation-name: down;
+  animation-duration: 1s;
 }
 
 .headt {
@@ -32,3 +35,92 @@
   font-weight: 200;
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
+
+.containerthree{
+  max-width: 1200px;
+  display: flex;
+  grid-gap: 10rem;
+  margin: auto;
+  place-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.containerone{
+
+  max-width: 1200px;
+  display: flex;
+  grid-gap: 1rem;
+  margin: auto;
+  place-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+
+}
+
+.icon{
+  width: 60px;
+  height: 60px;
+  margin-top: -10px;
+}
+
+.itemone{
+  display: flex;
+  grid-gap: 10px;
+}
+
+
+.contde {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 200;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+ 
+}
+
+.contdename {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(53, 44, 130);
+  text-shadow: 0px 0px 0px rgba(88, 88, 88, 0.5);
+
+}
+
+
+.flexcontainer{
+
+  display: flex;
+}
+
+@keyframes down {
+  from {
+    transform: translateY(-100px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  
+
+  .containerthree{
+  
+    grid-gap: 2rem; 
+    padding: 2rem;
+ 
+  }
+
+  .itemone{
+    display: grid;
+    flex-basis: 500px;
+    
+
+    
+  }
+  
+
+  }
